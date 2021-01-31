@@ -1,159 +1,251 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="author" content="ian">
-    <meta name="description" content="review">
-    <title>review</title>
+  <meta name="author" content="ian">
+  <meta name="description" content="review">
+  <title>review</title>
 
-    <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-    <div class="body__container">
-        <!-- TAG -->
-        <section class="section__tag section">
-            <div class='summary'>tag</div>
-            <div class='section'><h1>h1</h1></div>
-            <div class='section'><h2>h2</h2></div>
-            <div class='section'><h3>h3</h3></div>
-            <div class='section'><h4>h4</h4></div>
-            <div class='section'><p>p</p></div>
+  <div class="body__container">
+    <!-- TAG -->
+    <section class="section__tag section">
+      <div class='summary'>tag</div>
+      <div class='section'>
+        <h1>h1</h1>
+      </div>
+      <div class='section'>
+        <h2>h2</h2>
+      </div>
+      <div class='section'>
+        <h3>h3</h3>
+      </div>
+      <div class='section'>
+        <h4>h4</h4>
+      </div>
+      <div class='section'>
+        <p>p</p>
+      </div>
 
-            <div class='section'>
-                <abbr title="타이틀 속성이 나타난다.">abbr: 마우스를 올려놓으면...</abbr>
-            </div>
+      <div class='section'>
+        <abbr title="타이틀 속성이 나타난다.">abbr: 마우스를 올려놓으면...</abbr>
+      </div>
 
-            <div class='section'>cite : 웹 문서나 포스트에서 참고 내용을 표시 -> 
-                <cite>'cite'</cite>
-            </div>
+      <div class='section'>cite : 웹 문서나 포스트에서 참고 내용을 표시 ->
+        <cite>'cite'</cite>
+      </div>
 
-            <div class='section'>code : 컴퓨터 인식을 위한 소스 코드 입니다. -> 
-                <code>function savetheLocal()</code>
-            </div>
+      <div class='section'>code : 컴퓨터 인식을 위한 소스 코드 입니다. ->
+        <code>function savetheLocal()</code>
+      </div>
 
-            <div class='section'>small : 부가 정보처럼 작게 표시해도 되는 텍스트입니다. -> 
-                <small>부가정보...</small>
-            </div>
+      <div class='section'>small : 부가 정보처럼 작게 표시해도 되는 텍스트입니다. ->
+        <small>부가정보...</small>
+      </div>
 
-            <div class='section'>sub : 아래 첨자 -> 
-                H<sub>2</sub>O
-            </div>
+      <div class='section'>sub : 아래 첨자 ->
+        H<sub>2</sub>O
+      </div>
 
-            <div class='section'>sup : 위 첨자 -> 
-                E = mc<sup>2</sup>
-            </div>
+      <div class='section'>sup : 위 첨자 ->
+        E = mc<sup>2</sup>
+      </div>
 
-            <div class='section'>s : 취소선 -> 
-                10% 할인가 <s>30,000</s> 27,000
-            </div>
+      <div class='section'>s : 취소선 ->
+        10% 할인가 <s>30,000</s> 27,000
+      </div>
 
-            <div class='section'>u : 
-                <u>밑줄</u>
-            </div>
+      <div class='section'>u :
+        <u>밑줄</u>
+      </div>
 
-            <div class='section'>ins : 공동 작업 문서에서 새로운 내용을 삽입합니다. -> 
-                <ins datetime="2021-01-26">새로운 내용</ins>
+      <div class='section'>ins : 공동 작업 문서에서 새로운 내용을 삽입합니다. ->
+        <ins datetime="2021-01-26">새로운 내용</ins>
 
-                <blockquote>u태그와 차이? 
-                <br>밑줄이 표시되는 것은 같은나
-                <br> ins : 새로 추가된 내용을 표시, datetime 속성값을 이용, 내용의 추가와 삭제가 언제 이루어졌는지 의미적으로 지정할 수 있다.
-                <br>datetime 속성은 보이지 않지만 의미적으로 그 시점에 내용의 추가,삭제가 이루여졌음을 나타낸다.
-                <br> u : 단순히 밑줄만 표시
-                </blockquote>
-            </div>
+        <blockquote>u태그와 차이?
+          <br>밑줄이 표시되는 것은 같은나
+          <br> ins : 새로 추가된 내용을 표시, datetime 속성값을 이용, 내용의 추가와 삭제가 언제 이루어졌는지 의미적으로 지정할 수 있다.
+          <br>datetime 속성은 보이지 않지만 의미적으로 그 시점에 내용의 추가,삭제가 이루여졌음을 나타낸다.
+          <br> u : 단순히 밑줄만 표시
+        </blockquote>
+      </div>
 
-            <div class='section'>del : 공동 작업 문서에서 기존 내용을 삭제합니다. -> <del>기존 내용</del>
-                <blockquote>s태그와 차이는 위의 ins,u 태그 차이점과 동</blockquote>
-            </div>
+      <div class='section'>del : 공동 작업 문서에서 기존 내용을 삭제합니다. -> <del>기존 내용</del>
+        <blockquote>s태그와 차이는 위의 ins,u 태그 차이점과 동</blockquote>
+      </div>
 
-            <div class='section'>blockqoute : 인용
-                <br><blockquote>안으로 들여쓰기 된다.</blockquote>
-            </div>
+      <div class='section'>blockqoute : 인용
+        <br>
+        <blockquote>안으로 들여쓰기 된다.</blockquote>
+      </div>
 
-            <div class='section'>ol,li 태그 :
-                <ol type='a' start='2'>
-                    <li>속성 type='a'(알파벳)</li>
-                    <li>속성 start='2'(b부터 시작)</li>
-                    <li>ol,li의 순서있는 목록</li>
+      <div class='section'>ol,li 태그 :
+        <ol type='a' start='2'>
+          <li>속성 type='a'(알파벳)</li>
+          <li>속성 start='2'(b부터 시작)</li>
+          <li>ol,li의 순서있는 목록</li>
 
-                </ol>
-            </div>
+        </ol>
+      </div>
 
-            <div class='section'>ul,li 태그 :
-                <ul>
-                    <li>ul은 순서없는 목록으로 type=''없고</li>
-                    <li>그러므로 start=''도 없다.</li>
-                    <li>ul,li의 순서없는 목록</li>
-                </ul>
-            </div>
+      <div class='section'>ul,li 태그 :
+        <ul>
+          <li>ul은 순서없는 목록으로 type=''없고</li>
+          <li>그러므로 start=''도 없다.</li>
+          <li>ul,li의 순서없는 목록</li>
+        </ul>
+      </div>
 
-            <div class='section'>dl : 설명목록, dl 태그안에
-                <br>dt : 이름(단어명) 부분을 지정
-                <br>dd : 태그와 값(설명) 부분을 지정
-                <br>이 들어간다. dt태그 하나에 dd태그를 여러 개 사용할 수 있다.
+      <div class='section'>dl : 설명목록, dl 태그안에
+        <br>dt : 이름(단어명) 부분을 지정
+        <br>dd : 태그와 값(설명) 부분을 지정
+        <br>이 들어간다. dt태그 하나에 dd태그를 여러 개 사용할 수 있다.
 
-                <dl>
-                    <dt>dt 이름</dt>
-                    <dd>dd 값1</dd>
-                    <dd>dd 값2</dd>
-                </dl>
-            </div>   
-        </section>
+        <dl>
+          <dt>dt 이름</dt>
+          <dd>dd 값1</dd>
+          <dd>dd 값2</dd>
+        </dl>
+      </div>
+    </section>
 
-        <section class="section__table section">
-            <div class='summary'>table</div>
-            
-            <div>
-                <ul>
-                    <li>
-                        <table>
-                            <caption>표 제목</caption>
-                            <tr>
-                                <td>1행 1열</td>
-                                <td>1행 2열</td>
-                            </tr>
-                            <tr>
-                                <td>2행 1열</td>
-                                <td>2행 2열</td>
-                            </tr>
-                        </table>
-                    </li>
+    <section class="section__table section">
+      <div class='summary'>table</div>
 
-                    <li>
-                        <table>
-                            <caption>caption 표제목</caption>
-                            
-                            <thead>
-                                <tr>
-                                    <th>thead 1</th>
-                                    <th>thead 2</th>
-                                </tr>
-                            </thead>
+      <div>
+        <ul>
+          <li>
+            <table>
+              <caption>표 제목</caption>
+              <tr>
+                <td>1행 1열</td>
+                <td>1행 2열</td>
+              </tr>
+              <tr>
+                <td>2행 1열</td>
+                <td>2행 2열</td>
+              </tr>
+            </table>
+          </li>
 
-                            <tbody>
-                                <tr>
-                                    <td>1행 1열</td>
-                                    <td>1행 2열</td>
-                                </tr>
-                                <tr>
-                                    <td>2행 1열</td>
-                                    <td>2행 2열</td>
-                                </tr>
-                            </tbody>
+          <li>
+            <table>
+              <caption>caption 표제목</caption>
 
-                            <tfoot>
-                                <tr>
-                                    <td>tfoot 1</td>
-                                    <td>tfoot 2</td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </div>
+              <thead>
+                <tr>
+                  <th>thead 1</th>
+                  <th>thead 2</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1행 1열</td>
+                  <td>1행 2열</td>
+                </tr>
+                <tr>
+                  <td>2행 1열</td>
+                  <td>2행 2열</td>
+                </tr>
+              </tbody>
+
+              <tfoot>
+                <tr>
+                  <td>tfoot 1</td>
+                  <td>tfoot 2</td>
+                </tr>
+              </tfoot>
+            </table>
+          </li>
+
+          <li>
+            <table width='500' height='100'>
+              <caption>rowspan,colspan 사용</caption>
+              <thead>
+                <tr>
+                  <th>제목1(th태그)</th>
+                  <th>제목2(th태그)</th>
+                  <th>제목3(th태그)</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>table data1(td태그)</td>
+                  <td rowspan='2'>table data2(rowspan='2')</td>
+                  <td>table data3</td>
+                </tr>
+
+                <tr>
+                  <td>table data4</td>
+                  <td>table data5</td>
+                </tr>
+
+                <tr>
+                  <td>table data5</td>
+                  <td colspan='2'>table data6(colspan='2')------------------</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+
+          <li>
+            <h3>colgroup,col 태그 사용</h3>
+            <h4>상품 구성</h4>
+            <table>
+              <caption>선물용과 가정용 상품 구성</caption>
+              <colgroup>
+                <col style='background:#eee;'>
+                <col>
+                <col span='2' style='width: 150px;'>
+              </colgroup>
+
+              <thead>
+                <tr>
+                  <th>용도</th>
+                  <th>중량</th>
+                  <th>개수</th>
+                  <th>가격</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td rowspan='2'>선물용</td>
+                  <td>3kg</td>
+                  <td>11~16과</td>
+                  <td>35,000원</td>
+                </tr>
+                <tr>
+                  <td>5kg</td>
+                  <td>18~26과</td>
+                  <td>52,000원</td>
+                </tr>
+                <tr>
+                  <td rowspan='2'>가정용</td>
+                  <td>3kg</td>
+                  <td>11~16과</td>
+                  <td>30,000원</td>
+                </tr>
+                <tr>
+                  <td>5kg</td>
+                  <td>18~26과</td>
+                  <td>47,000원</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
 </body>
+
 </html>
