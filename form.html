@@ -8,16 +8,128 @@
 <body>
   <div class="body__container">
     <section>
-      <h4>form태그 fieldset,legend태그 사용</h4>
-      <form action="" autocomplete="on">
+      <h4>form,input 태그</h4>
+
+      <form action="" autocomplete="off">
         <fieldset>
           <legend>fieldset 1, legend</legend>
+          <ul>
+            <li>
+              <label for="input-test1">input, type="text"</label>
+              <input type="text" id="input-test1">
+            </li>
+            <li>
+              <label for="input-test2">input, type="text" , size="5"(5글자 이후는 보이지 않음): </label>
+              <input type="text" id="input-test2" size="5" value="value속성">
+            </li>
+            <li>
+              <label for="input-test3">input, type="text" , size="5", maxlength="5": </label>
+              <input type="text" id="input-test3" size="5" maxlength="5">
+            </li>
+            <li>
+              <label for="input-test4">input type="password" : </label>
+              <input type="password" id="input-test4">
+            </li>
+          </ul>
         </fieldset>
-          
+      </form>    
+      
+      <form action="" autocomplete="off">
         <fieldset>
-          <legend>fieldset 2, legend</legend>
+          <legend>로그인</legend>
+
+          <ul>
+            <li>
+              <label for="user-id">아이디 : </label>
+              <input type="text" id="user-id">
+            </li>
+
+            <li>
+              <label for="user-password">비밀번호 : </label>
+              <input type="password" id="user-password">
+            </li>
+          </ul>
         </fieldset>
       </form>
+
+      <form action="" autocomplete="off">
+        <fieldset>
+          <legend>배송정보</legend>
+
+          <ul>
+            <li>
+              <label for="user-name">이름 : </label>
+              <input type="text" id="user-name">
+            </li>
+            <li>
+              <label for="addr">배송 주소 : </label>
+              <input type="text" id="addr">
+            </li>
+            <li>
+              <label for="mail">이메일 : </label>
+              <input type="email" id="mail">
+            </li>
+            <li>
+              <label for="phone">연락처 : </label>
+              <input type="tel" id="phone">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>checkbox, radio</legend>
+          <p><b>input, type="checkbox"</b></p>
+          <label><input type="checkbox" value="c_1">checkbox 1</label>
+          <label><input type="checkbox" value="c_2">checkbox 2</label>
+          <label><input type="checkbox" value="c_3">checkbox 3</label>
+          <label><input type="checkbox" value="c_4">checkbox 4</label>
+
+          <p><b>input, type="radio", name 통일</b></p>
+          <label><input type="radio" name="gift" value="yes">redio 1</label>
+          <label><input type="radio" name="gift" value="no" checked>radio 2, checked 속성</label>
+        </fieldset>
+      </form>
+
+      <h4>-예제</h4>
+
+      <form action="" autocomplete="off">
+        <h4>회원 가입을 환영합니다.</h4>
+        <fieldset>
+          <legend>사용자 정보</legend>
+
+          <ul>
+            <li>
+              <label for="user-id">아이디 </label>
+              <input type="text" id="user-id">
+            </li>
+            <li>
+              <label for="mail">email </label>
+              <input type="email" id="mail">
+            </li>
+            <li>
+              <label for="password">비밀번호 </label>
+              <input type="password" id="password">
+            </li>
+            <li>
+              <label for="password-confirm">비밀번호 확인 </label>
+              <input type="password" id="password-confirm">
+            </li>
+        </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>이벤트와 새로운 소식</legend>
+          <label><input type="radio" value="yes" name="mail"> 메일 수신</label>
+          <!-- 위와 동일한 코드(label 사용법 차이) -->
+          <input type="radio" id="mail_no" value="no" name="mail" checked>
+          <label for="mail_no"> 메일 수신 안함</label>
+        </fieldset>
+        <input type="submit" value="가입하기">
+        <input type="reset" value="취소">
+      </form>
+      
+
+      
     </section>
   </div>
 </body>
