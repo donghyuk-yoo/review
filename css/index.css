@@ -1,3 +1,4 @@
+/* COMMON */
 .section {
   border-bottom: 1px solid grey;
 }
@@ -11,6 +12,7 @@
   padding-bottom: 10px;
 }
 
+/* TAG, TABLE */
 .section__table {
   border-top: 1px solid black;
   padding-top: 10px;
@@ -25,4 +27,8 @@
 .section__table li {
   margin-bottom: 10px;
   border-bottom: 1px solid grey;
+}
+/* FORM */
+.section__form {
+  padding-bottom: 30px;
 }
