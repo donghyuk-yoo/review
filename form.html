@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>review-form</title>
+  <title>form</title>
 
   <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -133,21 +133,162 @@
     </section>
     
     <section class="section section__form">
-      <form action="" autocomplete="off">
-        <h2 class="summary">숫자 입력 필드</h2>
-        <fieldset>
-          <legend>숫자, 날짜 입력</legend>
+      <h2 class="summary">숫자 입력 필드</h2>
 
+      <form action="" autocomplete="off">
+        <fieldset>
+          <legend>숫자, 날짜, 시간 입력</legend>
+
+          <p><b>숫자</b></p>
           <ul>
             <li>
-              <label><input type="checkbox"> &lt;-checkbox </label>
+              <label><input type="checkbox" value="cb_1"> &lt;- type="checkbox", type="number" -&gt;</label>
               <input type="number" min="0" max="5" value="1">개 (최대 5개)
+            </li>
+            <li>
+              html 태그를 문자열로 넣는 법
+              <br>
+              '&lt;' = &amp;lt;
+              <br>
+              '&gt;' = &amp;gt;
+              <br>
+              '&' = &amp;amp;
+            </li>
+            <li>
+              <label><input type="checkbox" value="cb_1">가정용 5kg</label>
+              <input type="range" min="1" max="3" value="1">개 (최대 3개)
+            </li>
+          </ul>
+
+          <p><b>날짜</b></p>
+          <ul>
+            <li>
+              <label>type="date", min="2021-02-01" max="2021-02-10" <input type="date" min="2021-02-01" max="2021-02-10"></label>
+            </li>
+            <li>
+              <label>type="month" <input type="month"></label>
+            </li>
+            <li>
+              <label>type="week" <input type="week"></label>
+            </li>
+          </ul>
+
+          <p><b>시간</b></p>
+          <ul>
+            <li>
+              <label>type="time" <input type="time"></label>
+            </li>
+            <li>
+              <label>type="datetime" <input type="datetime"></label>
+            </li>
+            <li>
+              <label>type="datetime-local" <input type="datetime-local"></label>
+            </li>
+          </ul>
+        </fieldset>
+        <input type="submit" value="제출">
+        <input type="reset" value="리셋">
+      </form>
+    </section>
+
+    <section class="section section__button">
+      <h2 class="summary">버튼, 파일첨부, 히든필드</h2>
+
+      <form action="" autocomplete="off">
+        <fieldset>
+          <legend>버튼</legend>
+
+          
+          <ul>
+            <li>
+              <dl>
+                <dt>이미지 버튼</dt>
+                <dd>type="image" src="이미지 경로" alt="대체 텍스트"</dd>
+                <dd><input type="image" id="image-button" src="" alt="대체텍스트"></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>기본 버튼</dt>
+                <dd>type="button" value="공지사항"</dd>
+                <dd><input type="button" id="default-button" value="공지사항" onClick="window.open('notice.html')"></dd>
+                <dd>기본 버튼, label과 연결시 label까지 버튼 취급</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>파일 첨부</dt>
+                <dd>type="file"</dd>
+                <dd><input type="file"></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>히든 필드</dt>
+                <dd>type="hidden" name="이름" value="서버로 보낼 값"</dd>
+                <dd>보이지 않음</dd>
+                <dd><input type="hidden"></dd>
+              </dl>
             </li>
           </ul>
         </fieldset>
       </form>
     </section>
 
+    <section class="section section__input_primary_attributes">
+      <h2 class="summary">input 태그의 주요 속성</h2>
+
+      <form action="" autocomplete="off">
+        <fieldset>
+          <legend>autofocus, placeholder, readonly</legend>
+          <ul>
+            <li>
+              <p>type="타입" autofocus</p>
+              <input type="text" autofocus>
+            </li>
+            <li>
+              <p>type="타입" placeholder="내용"</p>
+              <input type="text" placeholder="내용">
+            </li>
+            <li>
+              <p>type="타입" readonly</p>
+              <input type="text" value="입력불가" readonly>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+      
+      <form action="" autocomplete="off">
+        <fieldset>
+          <legend>required</legend>
+
+          <p>* 필수 입력란</p>
+          <ul>
+            <li>
+              <label>주문상품 <input type="text" value="상품용 3kg" readonly></label>
+            </li>  
+            <li>
+              <label>*이름 <input type="text" required></label>
+            </li>
+            <li>
+              <label>*배송 주소 <input type="text" required></label>
+            </li>
+            <li>
+              <label>이메일 <input type="email"></label>
+            </li>
+            <li>
+              <label>연락처 <input type="tel" placeholder="-없이 숫자만 입력"></label>
+            </li>
+            <li>
+              <label>배송 희망일 <input type="date"></label>
+              <small>(주문일로부터 3일 이후)</small>
+            </li>
+          </ul>
+        </fieldset>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="취소하기">
+      </form>
+    </section>
   </div>
 </body>
 </html>
