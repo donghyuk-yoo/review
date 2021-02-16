@@ -290,6 +290,146 @@
         <input type="reset" value="취소하기">
       </form>
     </section>
+
+    <section class="section section__form_tag">
+      <h2 class="summary">폼에서 사용하는 여러 가지 태그</h2>
+
+      <form action="" autocomplete="off">
+        <fieldset>
+          <legend>textarea 태그</legend>
+          <dl>
+            <dt>여러 줄을 입력하는 텍스트 영역</dt>
+            <dd>
+              <label for="memo">cols="20" rows="4"</label>
+              <textarea id="memo" cols="20" rows="4"></textarea>
+            </dd>
+          </dl>
+          
+        </fieldset>
+        <fieldset>
+          <legend>select, option 태그</legend>
+          <dl>
+            <dt>드롭다운 목록, select size="3"</dt>
+            <dd>
+              <select size="3">
+                <option value="o_1" selected>1번, selected 속성</option>
+                <option value="o_2" >2번</option>
+                <option value="o_3" >3번</option>
+                <option value="o_4" >4번</option>
+                <option value="o_5" >5번</option>
+                <option value="o_6" >6번</option>
+              </select>
+            </dd>
+          </dl>
+        </fieldset>
+
+        <fieldset>
+          <legend>datalist, option 태그</legend>
+
+          <input type="text" list="pack">
+          <datalist id="pack">
+            <option value="서버로 전송할 값1">옵션 1</option>
+            <option value="서버로 전송할 값2">옵션 2</option>
+          </datalist>
+        </fieldset>
+
+        <fieldset>
+          <legend>button 태그</legend>
+          
+          <button type="submit">type="submit"</button>
+          <button type="reset">type="reset"</button>
+          <button type="button">type="button"</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="section section__test">
+      <h2 class="summary">예제</h2>
+      <h2>회원 가입을 환영합니다</h2>
+      <form action="" autocomplete="off">
+        <fieldset>
+          <legend>사용자 정보</legend>
+          <ul>
+            <li>
+              <label>아이디 <input type="text" size="20" minlength="4" maxlength="10" placeholder="4자 ~ 10자 사이, 공백없이"></label>
+            </li>
+            <li>
+              <label>이메일 <input type="email" size="20"></label>
+            </li>
+            <li>
+              <label>비밀번호 <input type="password" id="pw_1" size="20"placeholder="문자, 숫자, 특수 기호 포함"></label>
+            </li>
+            <li>
+              <label>비밀번호 확인 <input type="password" id="pw_2" size="20"></label>
+            </li>
+            <li>
+              <label>가입 경로</label>
+              <select>
+                <option value="blog" selected>블로그</option>
+                <option value="cafe">카페</option>
+                <option value="search">검색</option>
+                <option value="sns">SNS</option>
+                <option value="etc">기타</option>
+              </select>
+            </li>
+            <li>
+              <label for="memo">하고 싶은 말</label>
+              <textarea name="" id="memo" cols="40" rows="4" placeholder="인사말, 다짐, 남길 말씀 등이 있다면 여기에"></textarea>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>이벤트와 새로운 소식</legend>
+          <label><input type="radio" name="news"> 메일 수신</label>
+          <label><input type="radio" name="news" checked> 메일 수신 안 함</label>
+        </fieldset>
+
+        <button type="submit">가입하기</button>
+        <button type="reset">취소</button>
+      </form>
+
+      <h2 class="summary">예제2</h2>
+      <form action="" autocomplete="off">
+        <fieldset>
+          <h2>프런트엔드 개발자 지원서</h2>
+          <p style="border-bottom: 1px solid grey">HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p>
+          
+          <p><b>개인정보</b></p>
+          <blockquote>
+            <ul>
+              <li>
+                <label>이름 <input type="text" placeholder="공백 없이 입력하세요"></label>
+              </li>
+              <li>
+                <label>연락처 <input type="tel"></label>
+              </li>
+            </ul>
+          </blockquote>
+          
+          <p><b>지원 분야</b></p>
+          <blockquote>
+            <ul>
+              <li>
+                <label><input type="radio" name="apply"> 웹 퍼블리싱</label>              
+              </li>
+              <li>
+                <label><input type="radio" name="apply"> 웹 애플리케이션 개발</label>
+              </li>
+              <li>
+                <label><input type="radio" name="apply"> 개발 환경 개선</label>
+              </li>
+            </ul>
+          </blockquote>
+
+          <p><b>지원 동기</b></p>
+          <textarea name="" id="motivation_of_apply" cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+          <br>
+          <button type="submit">접수하기</button>
+          <button type="reset">다시쓰기</button>
+        </fieldset>
+      </form>
+    </section>
   </div>
 </body>
 </html>
