@@ -1,0 +1,34 @@
+/* COMMON */
+.section {
+  border-bottom: 1px solid grey;
+}
+
+.summary {
+  font-size: 2em;
+  text-decoration: underline;
+  background: #e9ecef;
+  border-bottom: 1px solid grey;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+/* TAG, TABLE */
+.section__table {
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+.section__table ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.section__table li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid grey;
+}
+/* FORM */
+.section__form {
+  padding-bottom: 30px;
+}
