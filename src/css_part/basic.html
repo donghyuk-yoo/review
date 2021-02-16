@@ -7,6 +7,8 @@
   <title>css basic</title>
 
   <link rel="stylesheet" href="./main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="body__container">
@@ -16,8 +18,84 @@
 
       <ul>
         <li>
-          <p style="color: red;">CSS 스타일 형식</p>
+          <h4>CSS 스타일 형식</h4>
           <blockquote>선택자 { 속성 1: 속성값1; 속성2: 속성값2 };</blockquote>
+        </li>
+        <li>
+          <h4 style="font-size: 16px">글자크기 단위</h4>
+          <blockquote style="font-size: 12px">
+            <div style="font-size: 16px">html태그 font-size: 16px;<br>부모 요소 font-size: 12px;</div>
+            <div style="font-size: 1em">1em (12px)</div>
+            <div style="font-size: 1.5em">1.5em (18px)</div>
+            <div style="font-size: 1rem">1rem (16px)</div>
+            <div style="font-size: 16px">16px</div>
+          </blockquote>
+        </li>
+        <li>
+          <h4>폰트 스타일, 굵기</h4>
+          <blockquote>
+            <p style="font-style: italic;">이탤릭체</p>
+            <p style="font-weight: 100;">굵기 100 (lighter)</p>
+            <p style="font-weight: 400;">굵기 400 (normal)</p>
+            <p style="font-weight: 700;">굵기 700 (bold)</p>
+          </blockquote>
+        </li>
+        <li>
+          <h4>폰트 적용</h4>
+          <blockquote>
+            <p class="nanum">Nanum Pen Script 폰트</p>
+          </blockquote>
+        </li>
+        <li>
+          <h4>색상</h4>
+          <blockquote>
+            <p style="color: #ff0000">RED, #ff0000</p>
+            <p style="color: rgba(255, 0, 0, 0.3)">RED, rgba(255, 0, 0, 0.3)</p>
+          </blockquote>
+        </li>
+        <li>
+          <h4>정렬 text-align</h4>
+          <blockquote style="width: 10rem; border: 1px dotted grey;">
+            <p style="text-align: start">start start start start start</p>
+            <p style="text-align: end">end</p>
+            <p style="text-align: left">left</p>
+            <p style="text-align: right">right</p>
+            <p style="text-align: center">center</p>
+            <p style="text-align: justify">justify justify justify justify justify</p>
+          </blockquote>
+        </li>
+        <li>
+          <h4>줄 간격 line-height</h4>
+          <blockquote>
+            <p style="font-size: 1rem; line-height: 0.5;">
+              폰트 사이즈 1rem 줄 간격 0.5 폰트 사이즈 1rem 줄 간격 0.5<br>폰트 사이즈 1rem 줄 간격 0.5 폰트 사이즈 1rem 줄 간격 0.5
+            </p>
+            <p style="font-size: 1rem; line-height: 1.0;">
+              폰트 사이즈 1rem 줄 간격 1.0 폰트 사이즈 1rem 줄 간격 1.0<br>폰트 사이즈 1rem 줄 간격 1.0 폰트 사이즈 1rem 줄 간격 1.0
+            </p>
+            <p style="font-size: 1rem; line-height: 2.0;">
+              폰트 사이즈 1rem 줄 간격 2.0 폰트 사이즈 1rem 줄 간격 2.0<br>폰트 사이즈 1rem 줄 간격 2.0 폰트 사이즈 1rem 줄 간격 2.0
+            </p>
+            <div style="background: black; color: #fff; height: 4rem;">
+              텍스트 세로 정렬 안됨
+            </div>
+            <p></p>
+            <div style="background: black; color: #fff; height: 4rem; line-height: 4rem;">
+              텍스트 세로 정렬, height 속성값과 link-height 속성값 통일
+            </div>
+          </blockquote>
+        </li>
+        <li>
+          <h4>텍스트 줄 표시 text-decoration</h4>
+          <blockquote>
+            <p style="text-decoration: none;">none</p>
+            <p style="text-decoration: underline;">underline</p>
+            <p style="text-decoration: overline;">overline</p>
+            <p style="text-decoration: line-through;">line-through</p>
+          </blockquote>
+        </li>
+        <li>
+          <h4>텍스트 그림자 text-shadow</h4>
         </li>
       </ul>
 
@@ -25,3 +103,4 @@
   </div>
 </body>
 </html>
+

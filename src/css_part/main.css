@@ -1,4 +1,10 @@
 /* COMMON */
+html {
+  font-size: 16px;
+}
+body {
+  /* font-family: "맑은고딕", 돋움, 굴림; */
+}
 .section {
   border-bottom: 1px solid grey;
 }
@@ -12,23 +18,8 @@
   padding-bottom: 10px;
 }
 
-/* TAG, TABLE */
-.section__table {
-  border-top: 1px solid black;
-  padding-top: 10px;
+.nanum{
+  font-size: 2rem;
+  font-family: 'Nanum Pen Script', cursive;
 }
 
-.section__table ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.section__table li {
-  margin-bottom: 10px;
-  border-bottom: 1px solid grey;
-}
-/* FORM */
-.section__form {
-  padding-bottom: 30px;
-}
