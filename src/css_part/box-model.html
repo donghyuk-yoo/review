@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>box-model</title>
+
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="body__container">
+    <a href="../../public/index.html">HOME</a>
+    <section class="section section__box-model">
+      <h1 class="summary">박스 모델</h1>
+
+      <ul>
+        <li>
+          <h4>블록레벨 요소, h1, div, p, ...</h4>
+          <blockquote>
+            <p style="border: 1px solid black;">p태그(블록레벨 요소)</p>
+            <p style="border: 1px solid black;">블록레벨 요소, 한 줄 차지(너비 100%)</p>
+            <p style="border: 1px solid black;">p태그<p style="border: 1px solid black;">블록레벨 요소, p태그 내에 삽입했으나 한 줄 차지</p></p>
+          </blockquote>
+        </li>
+        <li>
+          <h4>인라인 레벨 요소, span, img, strong, ...</h4>
+          <blockquote>
+            <p style="border: 1px solid black;">p태그(블록레벨 요소)</p>
+            <span style="border: 1px solid black;">인라인 레벨 요소, 콘텐츠 영역만큼 차지</span>
+            <span style="border: 1px solid black;">그러므로 한 줄에 여러 개의 인라인 요소 가능</span>
+            <p style="border: 1px solid black;">3<span style="border: 1px solid black;">인라인 레벨 요소, p태그 내에 삽입</span></p>
+          </blockquote>
+        </li>
+        <li>
+          <h4>박스 모델의 기본 구성</h4>
+          <blockquote>
+            <p><b>콘텐츠 영역</b> &lt; 박스와 콘텐츠 영역 사이의 여백인 <b>패딩(padding)</b> &lt; 박스의 <b>테두리(border)</b> &lt; 여러 박스 모델 사이의 여백인 <b>마진(margin)</b></p>
+            <div style="border: 1px solid #000; width: 30rem; height: 30rem; display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+              <div style="flex-basis: 10%;">마진(margin)</div>
+              <div style="border: 1px solid #000; width: 25rem; height: 25rem; display: flex; justify-content: center; flex-direction: column; align-items: center; background: #000; color: #fff;">
+                <div>테두리(border)</div>
+                <div style="border: 1px solid #000; width: 20rem; height: 20rem; display: flex; justify-content: center; flex-direction: column; align-items: center; background: #fff; color: #000";>
+                  <div style="flex-basis: 10%">패딩(padding)</div>
+                  <div style="border: 1px solid #000; width: 15rem; height: 15rem; display: flex; justify-content: center; align-items: center;">
+                    콘텐츠 영역
+                  </div>
+                </div>
+              </div>
+            </div>
+          </blockquote>
+        </li>
+        <li>
+          <h4>박스 모델 크기 계산 box-sizing</h4>
+          <blockquote>
+            <div style="width: 14rem; height: 10rem; border: 1px solid #000; display: flex; align-items: center; padding: 1rem; margin: 1rem;">width: 14rem;<br>height: 10rem;<br>border: 1px;<br>padding,margin: 1rem</div>
+            <div style="width: 14rem; height: 1.5rem; border: 1px solid #000; margin: 1rem; box-sizing: border-box;">순수 width: 14rem</div>
+            <div style="width: 14rem; height: 10rem; border: 1px solid #000; display: flex; flex-wrap: wrap; align-content: stretch; padding: 1rem; margin: 1rem; box-sizing: border-box;">
+              <div>width: 14rem;<br>height: 10rem;<br>border: 1px;<br>padding,margin: 1rem</div>
+              <div style="color: red;">box-sizing: border-box;</div>
+            </div>
+          </blockquote>
+        </li>
+        <li>
+          <h4>박스 모델 그림자 효과 box-shadow</h4>
+          <blockquote>
+            <p>box-shadow: &lt;수평 거리&gt; &lt;수직 거리&gt; &lt;흐림 정도&gt; &lt;번짐 정도&gt; &lt;색상&gt; inset</p>
+            <div style="width: 25rem; height: 5rem; border: 1px solid #000; box-shadow: 0.3rem 0.3rem 0.5rem 0.3rem #aaa;">box-shadow: 0.3rem 0.3rem 0.5rem 0.3rem #aaa;</div>
+            <div style="width: 25rem; height: 5rem; border: 1px solid #000; box-shadow: 0.3rem 0.3rem 0.5rem 0.3rem #aaa inset; margin-top: 1rem;">box-shadow: 0.3rem 0.3rem 0.5rem 0.3rem #aaa <span style="color: red;">inset;</span></div>
+          </blockquote>
+        </li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
