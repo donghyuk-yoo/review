@@ -276,7 +276,56 @@
             <p>border-top-left-radius: 1.5rem 1rem(가로 반지름  세로 반지름), 특정 꼭지점만 타원</p>
             <div style="width: 5rem; height: 5rem; border: 0.2rem solid #000; border-top-left-radius: 1.5rem 1rem;"></div>
           </blockquote>
-          
+        </li>
+      </ul>
+
+      <h1 class="summary">여백 조절</h1>
+      <ul>
+        <li>
+          <h4>요소 주변 여백 설정 margin</h4>
+          <blockquote>
+            <ul>
+              <li>
+                <p>기본형 - margin: &lt;크기&gt; | &lt;백분율&gt; | auto(웹 문서 가운데 정렬)</p>
+                <div style="width: 10rem; height: 10rem; border: 0.2rem solid #000; box-sizing: border-box;">
+                  <div style="width: 8rem; height: 8rem; border: 0.2rem solid #000; box-sizing: border-box; margin-left: 2rem;">
+                    8rem box, margin-left: 2rem;
+                  </div>
+                  10rem box
+                </div>
+              </li>
+              <li><p>margin: auto; - display속성에서 지정한 값에 맞게 자동 지정</p></li>
+              <li>
+                <p>margin: 0 auto;
+                  <div>웹 문서 가운데 정렬 기능</div>
+                  <div>배치할 요소 너비값이 정해져 있어야 한다.</div>
+                  <div>좌우값 auto</div>
+                </p>
+                <div style="width: 10rem; height: 10rem; border: 0.2rem solid #000; box-sizing: border-box; margin: auto;"></div>
+              </li>
+              <li>
+                <p>마진 중첩(세로만 해당)</p>
+                <blockquote>
+                  회색영역 height: 22rem
+                  <br>각 박스높이 10+10에 각 박스마진 2+2, 24rem이지만, 실제로는 마진 중첩으로 둘 중 큰 값으로 합쳐져 2rem만 적용=22rem
+                </blockquote>
+                <div style="background: #aaa; width: 15rem; height: 22rem">
+                  <div style="width: 10rem; height: 10rem; border: 0.2rem solid #000; box-sizing: border-box; margin: 2rem;">height: 10rem<br>margin: 2rem</div>  
+                  <div style="width: 10rem; height: 10rem; border: 0.2rem solid #000; box-sizing: border-box; margin: 2rem;">height: 10rem<br>margin: 2rem</div>  
+                </div>
+              </li>
+            </ul>
+          </blockquote>
+        </li>
+        <li>
+          <h4>콘텐츠와 테두리 사이의 여백 설정 padding</h4>
+          <div style="width: 10rem; text-align: center;">테두리(border)</div>
+          <div style="width: 10rem; height: 10rem; border: 0.2rem solid #000; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #aaa; color: #f00;">
+            패딩
+            <div style="width: 5rem; height: 5rem; border: 0.2rem solid #000; box-sizing: border-box; text-align: center; line-height: 5rem; font-size: 0.8rem; background: #fff; color: #000;">
+              콘텐츠영역
+            </div>
+          </div>
         </li>
       </ul>
     </section>
