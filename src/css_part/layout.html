@@ -16,41 +16,169 @@
       <ul>
         <li>
           <h4>배치 방법 결정 display</h4>
-          <blockquote>
-            <ul>
-              <li>
-                <dl>
-                  <dt>block</dt>
-                  <dd>인라인 레벨 요소를 블록 요소로</dd>
-                </dl>
-              </li>
-              <li>
-                <dl>
-                  <dt>inline</dt>
-                  <dd>블록 레벨 요소를 인라인 레벨 요소로</dd>
-                </dl>
-              </li>
-              <li>
-                <dl>
-                  <dt>inline-block</dt>
-                  <dd>인라인 레벨 요소와 블록 레벨 요소의 속성을 모두 가지고, 마진과 패딩 지정 가능</dd>
-                  <dd>ex) span태그와 같은 인라인요소는 패딩이 좌우만 지정가능, 블록화 또는 인라인 블록화로 해결</dd>
-                </dl>
-              </li>
-              <li>
-                <dl>
-                  <dt>none</dt>
-                  <dd>해당 요소를 화면에 표시하지 않음</dd>
-                </dl>
-              </li>
-              <li>
-                <dl>
-                  <dt>예제 : 수평 내비게이션</dt>
-                  <dd></dd>
-                </dl>
-              </li>
-            </ul>
-          </blockquote>
+          <ul>
+            <li>
+              <dl>
+                <dt>block</dt>
+                <dd>인라인 레벨 요소를 블록 요소로</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>inline</dt>
+                <dd>블록 레벨 요소를 인라인 레벨 요소로</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>inline-block</dt>
+                <dd>인라인 레벨 요소와 블록 레벨 요소의 속성을 모두 가지고, 마진과 패딩 지정 가능</dd>
+                <dd>ex) span태그와 같은 인라인요소는 마진이 좌우만 지정가능, 블록화 또는 인라인 블록화로 해결</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>none</dt>
+                <dd>해당 요소를 화면에 표시하지 않음</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>예제 : 수평 내비게이션</dt>
+                <dd>
+                  <ul style="display: inline-block; list-style: none; border: 0.2em solid #aaa; padding: 0 1rem;">
+                    <li style="display: inline-block; border: 0.2em solid #aaa; padding: 1em; margin: 0.2rem 1rem;">menu 1</li>
+                    <li style="display: inline-block; border: 0.2em solid #aaa; padding: 1em; margin: 0.2em 1em;">menu 2</li>
+                    <li style="display: inline-block; border: 0.2em solid #aaa; padding: 1em; margin: 0.2em 1em;">menu 3</li>
+                    <li style="display: inline-block; border: 0.2em solid #aaa; padding: 1em; margin: 0.2em 1em;">menu 4</li>
+                  </ul>
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>왼쪽이나 오른쪽으로 배치 float</h4>
+          <ul>
+            <li>
+              <dl>
+                <dt>left</dt>
+                <dd>문서 왼쪽에 배치</dd>
+              </dl>
+            </li>
+            <li>
+              <p>right</p>
+              <blockquote>
+                오른쪽에 배치
+              </blockquote>
+            </li>
+            <li>
+              <dl>
+                <dt>none</dt>
+                <dd>기본값</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>display: inline-block과 차이</dt>
+                <dd>수평 내게이션을 만들때 display: inline-block은 기본 마진과 패딩이 있지만, float-left방식은 없어 개별 지정해주어야 하며,
+                <br>사용 후에는 clear로 플로팅을 해제하는 과정이 필요하다.</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>예제</dt>
+                <dd>
+                  <img src="../../img/bullet-image.png" alt="자체제작블릿img" style="width: 1rem;">
+                  p태그는 블록요소
+                </dd>
+                <dd>
+                  <img src="../../img/bullet-image.png" alt="자체제작블릿img" style="width: 1rem;">
+                  <span>img태그는 인라인요소, float: left로 띄움</span>
+                </dd>
+                <dd>
+                  <img src="../../img/bullet-image.png" alt="자체제작블릿img" style="width: 1rem;">
+                  <p style="display: inline;">display 속성은 요소의 종류를 변경하는 것으로 float 속성과 별개, 띄우는 순간 블록,인라인의 의미가 없어진다.</p>
+                </dd>
+                <dd>
+                  <img src="../../img/bullet-image.png" alt="자체제작블릿img" style="width: 1rem;">
+                  <p style="display: inline-block; margin: 0;">margin속성으로 p태그 요소와 여백확보</p>
+                </dd>
+                <dd>
+                  <p>
+                    <img src="../../img/jordan.jpg" alt="jordan retro 4 toro bravo" style="float: left; margin: 1rem;">
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo 
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                    jordan retro 4 toro bravo jordan retro 4 toro bravo jordan retro 4 toro bravo
+                  </p>
+                </dd>
+              </dl>
+            </li>  
+          </ul>
+        </li>
+        <li>
+          <h4>float 속성을 해제 clear</h4>
+          <ul>
+            <li>
+              <dl>
+                <dt>left</dt>
+                <dd>float: left 해제</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>right</dt>
+                <dd>right 해제</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>both</dt>
+                <dd>left, right 둘 다 해제</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>예제</dt>
+                <dd>
+                  <div style="background: #f00; padding: 2rem; margin: 1rem; float: left;">박스1</div>
+                  <div style="background: #ff0; padding: 2rem; margin: 1rem; float: left;">박스2</div>
+                  <div style="background: #0f0; padding: 2rem; margin: 1rem;">박스3</div>
+                  <div style="background: #00f; padding: 2rem; margin: 1rem; clear: both;">박스4</div>
+                </dd>
+              </dl>
+            </li>
+          </ul>
         </li>
       </ul>
     </section>
