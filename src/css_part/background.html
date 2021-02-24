@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="body__container">
+    <a href="../../public/index.html">HOME</a>
+    <section class="section section__background">
+      <h1 class="summary">이미지, 그라데이션, 배경에 적용</h1>
+
+      <h2>- 배경색, 배경 범위</h2>
+      <ul>
+        <li>
+          <dl>
+            <dt>배경색 지정 background-color</dt>
+            <dd>background-color: #008000;</dd>
+            <dd>background-color: rgb(0,128,0);</dd>
+            <dd>background-color: green;</dd>
+          </dl>
+        </li>
+        <li>
+          <h4>배경색의 적용 범위 조절 background-clip</h4>
+          <table style="border: 0.1rem 0 0.1rem solid #000;  border-collapse: collapse; padding: 10rem;">
+            <thead>
+              <tr>
+                <th style="border: 0.1rem solid #000; border-left: none;">종류</th>
+                <th style="border: 0.1rem solid #000; border-right: none;">설명</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="border: 0.1rem solid #000; border-left: none; padding: 0.3rem 1rem 0.3rem 1rem;">border-box</td>
+                <td style="border: 0.1rem solid #000; border-right: none; padding: 0.3rem 10rem 0.3rem 1rem;">박스 모델의 가장 외곽인 테두리까지 적용. 기본값</td>
+              </tr>
+              <tr>
+                <td style="border: 0.1rem solid #000; border-left: none; padding: 0.3rem 1rem 0.3rem 1rem;">padding-box</td>
+                <td style="border: 0.1rem solid #000; border-right: none; padding: 0.3rem 10rem 0.3rem 1rem;">박스 모델에서 테두리를 뺀 패딩 범위까지 적용</td>
+              </tr>
+              <tr>
+                <td style="border: 0.1rem solid #000; border-left: none; padding: 0.3rem 1rem 0.3rem 1rem;">content-box</td>
+                <td style="border: 0.1rem solid #000; border-right: none; padding: 0.3rem 10rem 0.3rem 1rem;">박스 모델에서 내용(콘텐츠) 부분에만 적용</td>
+              </tr>
+            </tbody>
+          </table>
+          <div style="background: #aaa; background-clip: border-box; width: 10rem; height: 3rem; padding: 1rem; margin: 1rem; display: inline-block; text-align: center; line-height: 3rem;  border: 0.2rem dotted #000;">border-box</div>
+          <div style="background: #aaa; background-clip: padding-box; width: 10rem; height: 3rem; padding: 1rem; margin: 1rem; display: inline-block; text-align: center; line-height: 3rem;  border: 0.2rem dotted #000;">padding-box</div>
+          <div style="background: #aaa; background-clip: content-box; width: 10rem; height: 3rem; padding: 1rem; margin: 1rem; display: inline-block; text-align: center; line-height: 3rem;  border: 0.2rem dotted #000;">content-box</div>  
+        </li>
+      </ul>
+
+      <h2>- 배경 이미지 지정</h2>
+      <ul>
+        <li>
+          <dl>
+            <dt>웹 요소에 배경 이미지를 넣는 background-image</dt>
+            <dd>background-image: url('이미지 파일 경로')</dd>
+            <div style="background-image: url('../../img/jordan.jpg'); width: 16rem; height: 22rem;"></div>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>배경 이미지의 반복 방법 지정 background-repeat</dt>
+            <dd>
+              <table>
+                <thead>
+                  <tr>
+                    <th class="t-left">종류</th>
+                    <th class="t-right">설명</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="t-left">repeat</td>
+                    <td class="t-right">브라우저 화면에 가득 찰 때까지 가로와 세로 반복, 기본값</td>
+                  </tr>
+                  <tr>
+                    <td class="t-left">repeat-x</td>
+                    <td class="t-right">브라우저 화면 너비에 가득 찰 때까지 가로로 반복</td>
+                  </tr>
+                  <tr>
+                    <td class="t-left">repeat-y</td>
+                    <td class="t-right">브라우저 화면 높이에 가득 찰떄까지 세로로 반복</td>
+                  </tr>
+                  <tr>
+                    <td class="t-left">no-repeat</td>
+                    <td class="t-right">한 번만 표시하고 반복하지 않음</td>
+                  </tr>
+                </tbody>
+              </table>
+            </dd>
+          </dl>
+        </li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

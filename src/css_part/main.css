@@ -2,24 +2,64 @@
 html {
   font-size: 16px;
 }
+
 body {
   /* font-family: "맑은고딕", 돋움, 굴림; */
 }
-.section {
-  border-bottom: 1px solid grey;
+
+a {
+  color: #008cff;
 }
 
-.summary {
-  font-size: 2em;
-  text-decoration: underline;
-  background: #e9ecef;
-  border-bottom: 1px solid grey;
-  padding-left: 10px;
-  padding-bottom: 10px;
+dt {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 0.1rem solid #000;
+}
+
+th {
+  text-align: center; 
+  background: #6dadf775;
+}
+
+td {
+  padding: 0.3rem 1rem;
+}
+
+.t-left {
+  border-left: none;
+}
+
+.t-right {
+  border-right: none;
+  padding-right: 10rem;
 }
 
 .nanum{
   font-size: 2rem;
   font-family: 'Nanum Pen Script', cursive;
 }
+
+.section {
+  border-bottom: 1px solid grey;
+}
+
+.summary {
+  font-size: 2em;
+  background: #e9ecef;
+  border-bottom: 1px solid grey;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+
+
 
