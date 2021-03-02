@@ -54,7 +54,7 @@
         </li>
       </ul>
 
-      <h2>- 배경 이미지 지정</h2>
+      <h2>- 배경 이미지</h2>
       <ul>
         <li>
           <dl>
@@ -133,6 +133,124 @@
               </ul>
             </dd>
           </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>배경 이미지 위치 조절 background-position: &lt;수평위치&gt; &lt;수직위치&gt;</dt>
+            <dd>
+              <ul>
+                <li>
+                  <dl>
+                    <dt>background-position: right bottom; (키워드)</dt>
+                    <dd>영역크기 w:30rem h:30rem </dd>
+                    <dd>
+                      <div style="width: 30rem; height: 30rem; border: 0.1rem solid #000">
+                        <div style="background-position: right bottom; background-repeat: no-repeat; background-image: url('../../img/Barkley.jpg'); width: 100%; height: 100%;"></div>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>background-position: 50% 50%; (백분율)</dt>
+                    <dd>영역크기 w:30rem h:30rem </dd>
+                    <dd>
+                      <div style="width: 30rem; height: 30rem; border: 0.1rem solid #000">
+                        <div style="background-position: 50% 50%; background-repeat: no-repeat; background-image: url('../../img/Barkley.jpg'); width: 100%; height: 100%;"></div>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>background-position: 21rem 20rem; (크기)</dt>
+                    <dd>영역크기 w:30rem h:30rem </dd>
+                    <dd>
+                      <div style="width: 30rem; height: 30rem; border: 0.1rem solid #000">
+                        <div style="background-position: 21rem 20rem; background-repeat: no-repeat; background-image: url('../../img/Barkley.jpg'); width: 100%; height: 100%;"></div>
+                      </div>
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <h4>불릿 대신 이미지</h4>
+          <blockquote>
+            <ul style="margin-left: -2rem; list-style-type: none;">
+              <li style="background-image: url('../../img/bullet-image.png'); background-repeat: no-repeat; padding-left: 3rem; background-position: left center; padding-left: 1rem; line-height: 2rem;">1</li>
+              <li style="background-image: url('../../img/bullet-image.png'); background-repeat: no-repeat; padding-left: 3rem; background-position: left center; padding-left: 1rem; line-height: 2rem;">2</li>
+              <li style="background-image: url('../../img/bullet-image.png'); background-repeat: no-repeat; padding-left: 3rem; background-position: left center; padding-left: 1rem; line-height: 2rem;">3</li>
+              <li style="background-image: url('../../img/bullet-image.png'); background-repeat: no-repeat; padding-left: 3rem; background-position: left center; padding-left: 1rem; line-height: 2rem;">4</li>
+            </ul>
+          </blockquote>
+        </li>
+        <li>
+          <h4>배경 이미지의 적용 범위 조절 background-origin</h4>
+          <blockquote>
+            <table>
+              <thead>
+                <tr>
+                  <th class="t-left">종류</th>
+                  <th class="t-right">설명</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="t-left">content-box</td>
+                  <td class="t-right">박스 모델에서 내용 부분에만 배경 이미지 표시, 기본값</td>
+                </tr>
+                <tr>
+                  <td class="t-left">padding-box</td>
+                  <td class="t-right">박스 모델에서 패딩까지</td>
+                </tr>
+                <tr>
+                  <td class="t-left">border-box</td>
+                  <td class="t-right">박스 모델에서 테두리까지</td>
+                </tr>
+              </tbody>
+            </table>
+          </blockquote>
+        </li>
+        <li>
+          <h4>배경 이미지 고정 background-attachment</h4>
+          <blockquote>
+            <table>
+              <thead>
+                <tr>
+                  <th class="t-left">종류</th>
+                  <th class="t-right">설명</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="t-left">scroll</td>
+                  <td class="t-right">화면 스크롤시 배경 이미지도 스크롤, 기본값</td>
+                </tr>
+                <tr>
+                  <td class="t-left">fixed</td>
+                  <td class="t-right">화면 스크롤시 배경 이미지 고정, 내용만 스크롤</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul>
+              <li>
+                <p>scroll</p>
+                <div style="width: 30rem; height: 30rem; border: 0.1rem solid #000">
+                  <div style="background-attachment: scroll; background-position: 50% 50%; background-repeat: no-repeat; background-image: url('../../img/Barkley.jpg'); width: 100%; height: 100%;"></div>
+                </div>
+              </li>
+              <li>
+                <p>fixed</p>
+                <div style="width: 30rem; height: 30rem; border: 0.1rem solid #000">
+                  <div style="background-attachment: fixed; background-position: 25% 80%; background-repeat: no-repeat; background-image: url('../../img/Barkley.jpg'); width: 100%; height: 100%;"></div>
+                </div>
+                </div>
+              </li>
+            </ul>
+          </blockquote>
         </li>
       </ul>
     </section>
