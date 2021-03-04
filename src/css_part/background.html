@@ -247,7 +247,87 @@
                 <div style="width: 30rem; height: 30rem; border: 0.1rem solid #000">
                   <div style="background-attachment: fixed; background-position: 25% 80%; background-repeat: no-repeat; background-image: url('../../img/Barkley.jpg'); width: 100%; height: 100%;"></div>
                 </div>
-                </div>
+              </li>
+            </ul>
+          </blockquote>
+        </li>
+        <li>
+          <h4>background 하나의 속성으로</h4>
+          <blockquote>
+            <p>background: url('...') no-repeat center bottom fixed;</p>
+          </blockquote>
+        </li>
+        <li>
+          <h4>배경 이미지 크기 조절 background-size</h4>
+          <blockquote>
+            <table>
+              <thead>
+                <tr>
+                  <th>종류</th>
+                  <th>설명</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>auto</td>
+                  <td>원래 배경 이미지 크기만큼 표시, 기본값</td>
+                </tr>
+                <tr>
+                  <td>contain</td>
+                  <td>요소 안에 배경 이미지가 다 들어오도록 이미지를 확대, 축소</td>
+                </tr>
+                <tr>
+                  <td>cover</td>
+                  <td>배경 이미지로 요소를 모두 덮도록 이미지를 확대, 축소</td>
+                </tr>
+                <tr>
+                  <td>크기</td>
+                  <td>이미지의 너비와 높이를 지정, 값이 하나만 주어질 경우 너빗값으로 인식, 
+                    <br>이미지의 너비와 너빗값에 맞춘 높잇값도 자동 계산</td>
+                </tr>
+                <tr>
+                  <td>백분율</td>
+                  <td>배경 이미지가 들어갈 요소의 크기를 기준으로 값을 백분율로 지정하고
+                    <br>그 크기에 맞도록 배경 이미지를 확대, 축소</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul>
+              <li>
+                <p>auto</p>
+                <blockquote>
+                  <div style="background: url('../../img/jordan.jpg') no-repeat left top; background-size: auto; width: 30rem; height: 30rem; border: 0.1rem solid #000;"></div>
+                </blockquote>
+              </li>
+              <li>
+                <p>contain</p>
+                <blockquote>
+                  <div style="background: url('../../img/jordan.jpg') no-repeat left top; background-size: contain; width: 30rem; height: 30rem; border: 0.1rem solid #000;"></div>
+                </blockquote>
+              </li>
+              <li>
+                <p>cover</p>
+                <blockquote>
+                  <div style="background: url('../../img/jordan.jpg') no-repeat left top; background-size: cover; width: 30rem; height: 30rem; border: 0.1rem solid #000;"></div>
+                </blockquote>
+              </li>
+              <li>
+                <p>크기, 가로,세로 30rem, 테두리 영역: 가로,세로 30rem</p>
+                <blockquote>
+                  <div style="background: url('../../img/jordan.jpg') no-repeat left top; background-size: 30rem 30rem; width: 30rem; height: 30rem; border: 0.1rem solid #000;"></div>
+                </blockquote>
+              </li>
+              <li>
+                <p>백분율, 가로 100%, 세로 100%</p>
+                <blockquote>
+                  <div style="background: url('../../img/jordan.jpg') no-repeat left top; background-size: 100% 100%; width: 30rem; height: 30rem; border: 0.1rem solid #000;"></div>
+                </blockquote>
+              </li>
+              <li>
+                <p>예제</p>
+                <blockquote>
+                  <a href="./bacground-example.html">문서 전체에 배경 넣기</a>
+                </blockquote>
               </li>
             </ul>
           </blockquote>
