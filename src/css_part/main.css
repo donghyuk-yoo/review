@@ -73,3 +73,82 @@ td {
 .rotate1:hover {
   transform: rotate(45deg);
 }
+
+.trans1 {
+  width: 10rem;
+  height: 10rem;
+  background: blue;
+  color: #fff;
+  transition-property: width, height;
+  transition-duration: 2s, 1s;
+}
+
+.trans1:hover {
+  width: 20rem;
+  height: 20rem;
+}
+
+.timing {
+  width: 10rem;
+  height: 2rem;
+  display: inline-block;
+  background: blue;
+  color: #fff;
+  text-align: center;
+  line-height: 2rem;
+  transition-property: height;
+  transition-duration: 2s;
+}
+
+.timing1:hover {
+  transition-timing-function: ease;
+  height: 20rem;
+}
+.timing2:hover {
+  transition-timing-function: linear;
+  height: 20rem;
+}
+.timing3:hover {
+  transition-timing-function: ease-in;
+  height: 20rem;
+}
+.timing4:hover {
+  transition-timing-function: ease-out;
+  height: 20rem;
+}
+.timing5:hover {
+  transition-timing-function: ease-in-out;
+  height: 20rem;
+}
+
+.delay1 {
+  width: 10rem;
+  height: 10rem;
+  background: blue;
+  color: #fff;
+  transition-property: width, height;
+  transition-duration: 2s, 1s;
+  transition-delay: 2s;
+}
+
+.delay1:hover {
+  color: red;
+  width: 20rem;
+  height: 20rem;
+}
+
+.trans-all {
+  width: 10rem;
+  height: 10rem;
+  background: blue;
+  color: #fff;
+  transition: all 2s ease-in 0.5s;
+}
+
+.trans-all:hover {
+  width: 20rem;
+  height: 20rem;
+  background: yellow;
+  color: red;
+  transform: rotate(360deg);
+}

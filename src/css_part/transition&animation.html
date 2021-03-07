@@ -10,8 +10,9 @@
 <body>
     <a href="../../public/index.html">HOME</a>
     <div class="body__container">
-        <h1 class="summary">변형</h1>
-        
+      <section class="section section__transform">
+        <h2 class="summary">변형</h2>
+        <h3>물체의 크기나 형태의 위치를 변경</h3>
         <ul>
             <li>
                 <h4>transform과 변형 함수</h4>
@@ -27,6 +28,55 @@
                 </blockquote>
             </li>
         </ul>
+      </section>
+
+      <section class="section section__transition">
+        <h2 class="summary">트랜지션</h2>
+        <h3>웹 요소의 스타일 속성이 바뀌는 것</h3>
+        <ul>
+          <li>
+            <h4>트랜지션의 대상 지정 transition-property</h4>
+            <blockquote>
+              <ul>
+                <li><p>all(기본값, 모든속성에 적용)</p></li>
+                <li><p>none</p></li>
+                <li><p>속성이름(transition-property: width, height;)</p></li>
+              </ul>
+            </blockquote>
+          </li>
+          <li>
+            <h4>트랜지션의 진행 시간 지정 transition-duration</h4>
+            <blockquote>
+              <p>transition-property: width, height;<br>transition-duration: 2s, 1s; (width에 2초, height에 1초)</p>
+              <div class="trans1">hover { width: 20rem; height: 20rem; }</div>
+            </blockquote>
+          </li>
+          <li>
+            <h4>트랜지션의 속도 곡선 지정 transition-timing-function</h4>
+            <blockquote style="height: 21rem;">
+              <div class="timing timing1">ease</div>
+              <div class="timing timing2">lienar</div>
+              <div class="timing timing3">ease-in</div>
+              <div class="timing timing4">ease-out</div>
+              <div class="timing timing5">ease-in-out</div>
+            </blockquote>
+          </li>
+          <li>
+            <h4>트랜지션의 지연 시간 설정 transition-delay</h4>
+            <blockquote>
+              <p>transition-delay: 2s;</p>
+              <div class="delay1">hover { width: 20rem; height: 20rem; }</div>
+            </blockquote>
+          </li>
+          <li>
+            <h4>트랜지션 속성 한번에 transition</h4>
+            <blockquote>
+              <p></p>
+              <div class="trans-all">transition: all 2s ease-in 0.5s;</div>
+            </blockquote>
+          </li>
+        </ul>
+      </section>
     </div>
 </body>
 </html>
