@@ -12,7 +12,7 @@
   <div class="body__container">
     <a href="../../public/index.html">HOME</a>
     <section class="section section__background">
-      <h1 class="summary">이미지, 그라데이션, 배경에 적용</h1>
+      <h1 class="summary">배경, 이미지, 그라데이션</h1>
 
       <h2>- 배경색, 배경 범위</h2>
       <ul>
@@ -337,42 +337,40 @@
             </ul>
           </blockquote>
         </li>
+      </ul>
 
+      <h2>- 그러데이션</h2>
+      <ul>
         <li>
-          <h4>그러데이션</h4>
+          <p style="display: inline;">선형 그러데이션 linear-gradient(to 방향 또는 속도, 색상 중지점, 색상 중지점...)</p>
           <blockquote>
-            <ul>
-              <li>
-                <p style="display: inline;">선형 그러데이션 linear-gradient(to 방향 또는 속도, 색상 중지점, 색상 중지점...)</p>
-                <blockquote>
-                  <div style="display: inline-block;">
-                    <div>방향</div>
-                    <div style="background: red; background: linear-gradient(to bottom, white, yellow); width: 10rem; height: 10rem; border: 0.1rem solid #000;">background: linear-gradient(to bottom, white, yellow);</div>
-                  </div>
-                  <div style="display: inline-block;">
-                    <div>각도</div>
-                    <div style="background: red; background: linear-gradient(45deg, white, yellow); width: 10rem; height: 10rem; border: 0.1rem solid #000;">background: linear-gradient(45deg, white, yellow);</div>
-                  </div>
-                </blockquote>
-              </li>
-              <li>
-                <p>색상 중지점(색상이 바뀌는 지점)</p>
-                <blockquote>
-                  <div style="background: red; background: linear-gradient(to bottom, #06f, #fff 30%, #06f); width: 10rem; height: 10rem;">linear-gradient(to bottom, #06f, #fff 30%, #06f);</div>
-                </blockquote>
-              </li>
-              <li>
-                <p>원형 그러데이션 radial-gradient(모양 크기 at 위치, 색상 중지점, 색상 중지점...)</p>
-                <div>
-                  <div>모양 미지정시 타원형(ellipse)</div>
-                  <div style="background: red; background: radial-gradient(white, yellow, red); width: 15rem; height: 10rem;">background: red; background: radial-gradient(white, yellow, red);</div>
-                </div>
-                <div>
-                  <div>모양 지정 circle</div>
-                  <div style="background: red; background: radial-gradient(circle, white, yellow, red); width: 15rem; height: 10rem;">background: red; background: radial-gradient(circle, white, yellow, red);</div>
-                </div>
-              </li>
-            </ul>
+            <div style="display: inline-block;">
+              <div>방향</div>
+              <div style="background: red; background: linear-gradient(to bottom, white, yellow); width: 10rem; height: 10rem; border: 0.1rem solid #000;">background: linear-gradient(to bottom, white, yellow);</div>
+            </div>
+            <div style="display: inline-block;">
+              <div>각도</div>
+              <div style="background: red; background: linear-gradient(45deg, white, yellow); width: 10rem; height: 10rem; border: 0.1rem solid #000;">background: linear-gradient(45deg, white, yellow);</div>
+            </div>
+          </blockquote>
+        </li>
+        <li>
+          <p>색상 중지점(색상이 바뀌는 지점)</p>
+          <blockquote>
+            <div style="background: red; background: linear-gradient(to bottom, #06f, #fff 30%, #06f); width: 10rem; height: 10rem;">linear-gradient(to bottom, #06f, #fff 30%, #06f);</div>
+          </blockquote>
+        </li>
+        <li>
+          <p>원형 그러데이션 radial-gradient(모양 크기 at 위치, 색상 중지점, 색상 중지점...)</p>
+          <blockquote>
+            <div>
+              <div>모양 미지정시 타원형(ellipse)</div>
+              <div style="background: red; background: radial-gradient(white, yellow, red); width: 15rem; height: 10rem;">background: red; background: radial-gradient(white, yellow, red);</div>
+            </div>
+            <div>
+              <div>모양 지정 circle</div>
+              <div style="background: red; background: radial-gradient(circle, white, yellow, red); width: 15rem; height: 10rem;">background: red; background: radial-gradient(circle, white, yellow, red);</div>
+            </div>
           </blockquote>
         </li>
       </ul>

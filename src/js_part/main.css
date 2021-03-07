@@ -20,13 +20,12 @@ table {
   border-collapse: collapse;
 }
 
-th,
-td {
+th, td {
   border: 0.1rem solid #000;
 }
 
 th {
-  text-align: center;
+  text-align: center; 
   background: #6dadf775;
 }
 
@@ -43,9 +42,9 @@ td {
   padding-right: 10rem;
 }
 
-.nanum {
+.nanum{
   font-size: 2rem;
-  font-family: "Nanum Pen Script", cursive;
+  font-family: 'Nanum Pen Script', cursive;
 }
 
 .section {
@@ -61,15 +60,6 @@ td {
   padding-bottom: 10px;
 }
 
-/* transition & animation */
-.move1:hover {
-  transform: translate(2rem, 0);
-}
 
-.scale1:hover {
-  transform: scale(1.5, 1.5);
-}
 
-.rotate1:hover {
-  transform: rotate(45deg);
-}
+
