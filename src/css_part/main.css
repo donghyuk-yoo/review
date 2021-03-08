@@ -88,6 +88,39 @@ td {
   height: 20rem;
 }
 
+.timing-all {
+  width: 10rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  background: blue;
+  color: #fff;
+  text-align: center;
+  line-height: 2rem;
+  transition-property: height;
+  transition-duration: 2s;
+}
+
+.timing-all:hover ~ .timing1 {
+  transition-timing-function: ease;
+  height: 20rem;
+}
+.timing-all:hover ~ .timing2 {
+  transition-timing-function: linear;
+  height: 20rem;
+}
+.timing-all:hover ~ .timing3 {
+  transition-timing-function: ease-in;
+  height: 20rem;
+}
+.timing-all:hover ~ .timing4 {
+  transition-timing-function: ease-out;
+  height: 20rem;
+}
+.timing-all:hover ~ .timing5 {
+  transition-timing-function: ease-in-out;
+  height: 20rem;
+}
+
 .timing {
   width: 10rem;
   height: 2rem;
@@ -99,7 +132,10 @@ td {
   transition-property: height;
   transition-duration: 2s;
 }
-
+.timing-all:hover .timing1 {
+  transition-timing-function: ease;
+  height: 20rem;
+}
 .timing1:hover {
   transition-timing-function: ease;
   height: 20rem;
@@ -151,4 +187,38 @@ td {
   background: yellow;
   color: red;
   transform: rotate(360deg);
+}
+
+.container {
+  width: 57rem;
+  border: 0.1rem solid #000;
+}
+
+.prod-list {
+  list-style: none;
+}
+
+.prod-list li {
+  display: inline-block;
+  /* float: left; */
+  position: relative;
+}
+
+.prod-list li:hover .caption {
+  opacity: 1;
+  transform: translate(0, -23.1rem);
+}
+
+.prod-list .caption {
+  position: absolute;
+  top: 23rem;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  line-height: 4rem;
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
 }
