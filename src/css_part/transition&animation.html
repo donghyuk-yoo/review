@@ -118,7 +118,51 @@
 
       <section class="section section__animation">
         <h2 class="summary">애니메이션</h2>
-        
+        <ul>
+          <li>
+            <div class="ani1"></div>
+            <p>
+              width: 10rem;<br>
+              height: 10rem;<br>
+              background: blue;<br>
+              <span style="color: blue;">border: 0.1rem solid transparent;</span><br>
+              <span style="color: blue;">animation-name: shape;</span><br>
+              <span style="color: blue;">animation-duration: 3s;</span><br>
+              <span style="color: blue;">animation-iteration-count: infinite;</span><br>
+              <span style="color: blue;">animation-direction: alternate;</span><br>
+              <span style="color: blue;">animation-timing-function: ease;</span>
+            </p>
+            <p>
+              @keyframes shape {<br>
+                from { border: 0.1rem solid transparent; }<br>
+                to {<br>
+                  border: 0.1rem solid #000;<br>
+                  border-radius: 50%;<br>
+                }<br>
+              }
+            </p>
+          </li>
+          <li>
+            <div class="ani2"></div>
+            <p>
+              width: 10rem;<br>
+              height: 10rem;<br>
+              background: yellow;<br>
+              border: 0.1rem solid #000;<br>
+              <span style="color: blue;">animation-name: rotate;</span><br>
+              <span style="color: blue;">animation-duration: 3s;</span><br>
+              <span style="color: blue;">animation-iteration-count: infinite;</span><br>
+              <span style="color: blue;">animation-direction: alternate;</span><br>
+              <span style="color: blue;">animation-timing-function: ease;</span>
+            </p>
+            <p>
+              @keyframes rotate {<br>
+                from { transform: rotate(0deg); }<br>
+                to { transform: rotate(360deg); }<br>
+              }
+            </p>
+          </li>
+        </ul>
       </section>
     </div>
 </body>
