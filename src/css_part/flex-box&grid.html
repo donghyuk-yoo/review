@@ -14,34 +14,68 @@
       <h2 class="summary">플렉스 박스</h2>
       <ul>
         <li>
-          <h4>플렉스 박스 항목 배치 속성</h4>
-          <p>flex-direction: row;</p>
-          <div style="display: flex; flex-direction: row; width: 50rem; border: 0.1rem solid #000; padding: 0.2rem;">
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">1</div>
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">2</div>
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">3</div>
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">4</div>
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">5</div>
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">6</div>
-          </div>
-          <p>flex-direction: row-reverse;</p>
-          <div style="display: flex; flex-direction: row-reverse; width: 50rem; border: 0.1rem solid #000; padding: 0.2rem;">
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">1</div>
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">2</div>
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">3</div>
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">4</div>
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">5</div>
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">6</div>
-          </div>
-          <p>flex-direction: column-reverse;</p>
-          <div style="display: flex; flex-direction: column-reverse; width: 50rem; border: 0.1rem solid #000; padding: 0.2rem;">
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">1</div>
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">2</div>
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">3</div>
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">4</div>
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">5</div>
-            <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">6</div>
-          </div>
+          <h4>플렉스 방향 지정 flex-direction</h4>
+          <blockquote>
+            <p>flex-direction: row;</p>
+            <div style="display: flex; flex-direction: row; width: 50rem; border: 0.1rem solid #000; padding: 0.2rem;">
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">1</div>
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">2</div>
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">3</div>
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">4</div>
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">5</div>
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">6</div>
+            </div>
+            <p>flex-direction: row-reverse;</p>
+            <div style="display: flex; flex-direction: row-reverse; width: 50rem; border: 0.1rem solid #000; padding: 0.2rem;">
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">1</div>
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">2</div>
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">3</div>
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">4</div>
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">5</div>
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">6</div>
+            </div>
+            <p>flex-direction: column-reverse;</p>
+            <div style="display: flex; flex-direction: column-reverse; width: 50rem; border: 0.1rem solid #000; padding: 0.2rem;">
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">1</div>
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">2</div>
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">3</div>
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">4</div>
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">5</div>
+              <div style="width: 5rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">6</div>
+            </div>
+          </blockquote>
+        </li>
+        <li>
+          <h4>플렉스 항목의 줄을 바꾸는 flex-wrap</h4>
+          <blockquote>
+            <p>flex-wrap: nowrap; (기본값)</p>
+            <div style="flex-wrap: nowrap; display: flex; width: 50rem; border: 0.1rem solid #000; padding: 0.2rem;">
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">1</div>
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">2</div>
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">3</div>
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">4</div>
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">5</div>
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">6</div>
+            </div>
+            <p>flex-wrap: wrap;</p>
+            <div style="flex-wrap: wrap; display: flex; width: 50rem; border: 0.1rem solid #000; padding: 0.2rem;">
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">1</div>
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">2</div>
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">3</div>
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">4</div>
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">5</div>
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">6</div>
+            </div>
+            <p>flex-wrap: wrap-reverse;</p>
+            <div style="flex-wrap: wrap-reverse; display: flex; width: 50rem; border: 0.1rem solid #000; padding: 0.2rem;">
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">1</div>
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">2</div>
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">3</div>
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">4</div>
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">5</div>
+              <div style="width: 10rem; height: 5rem; border: 0.1rem solid #000; text-align: center; line-height: 5rem; background: #000; color: #fff; margin: 0.2rem;">6</div>
+            </div>
+          </blockquote>
         </li>
       </ul>
     </section>
