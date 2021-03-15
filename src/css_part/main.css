@@ -279,3 +279,15 @@ td {
     transform: rotate(360deg);
   }
 }
+
+/* grid */
+#wrapper {
+  width: 50rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: minmax(10rem, auto) minmax(15rem, auto);;
+}
+
+.section__grid .items {
+  border: 0.1rem solid #000;
+}

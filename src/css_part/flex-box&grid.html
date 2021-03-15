@@ -281,6 +281,54 @@
             <p>inline-grid</p>
           </blockquote>
         </li>
+        <li>
+          <h4>칼럼과 줄을 지정 grid-template-columns, grid-template-rows</h4>
+          <blockquote>
+            <p>display: grid; grid-template-columns: 20rem 20rem 20rem; grid-template-rows: 10rem 10rem;</p>
+            <div style="display: grid; grid-template-columns: 20rem 20rem 20rem; grid-template-rows: 10rem 10rem;">
+              <div style="border: 0.1rem solid #000;">1</div>
+              <div style="border: 0.1rem solid #000;">2</div>
+              <div style="border: 0.1rem solid #000;">3</div>
+              <div style="border: 0.1rem solid #000;">5</div>
+              <div style="border: 0.1rem solid #000;">6</div>
+              <div style="border: 0.1rem solid #000;">7</div>
+            </div>
+          </blockquote>
+        </li>
+        <li>
+          <h4>상대적인 크기 지정 fr</h4>
+          <blockquote>
+            <p>width: 50rem; height: 20rem;<br>display: grid; grid-template-columns: 2fr 1fr 2fr; grid-template-rows: 1fr 2fr;</p>
+            <div style="width: 50rem; height: 20rem; display: grid; grid-template-columns: 2fr 1fr 2fr; grid-template-rows: 1fr 2fr;">
+              <div style="border: 0.1rem solid #000;">1</div>
+              <div style="border: 0.1rem solid #000;">2</div>
+              <div style="border: 0.1rem solid #000;">3</div>
+              <div style="border: 0.1rem solid #000;">5</div>
+              <div style="border: 0.1rem solid #000;">6</div>
+              <div style="border: 0.1rem solid #000;">7</div>
+            </div>
+          </blockquote>
+        </li>
+        <li>
+          <h4>값이 반복될 때 줄여서 표현 repeat()</h4>
+          <blockquote>
+            <p>grid-template-columns: 1fr 1fr 1fr; &nbsp;=>&nbsp; grid-template-columns: repeat(3, 1fr)</p>
+          </blockquote>
+        </li>
+        <li>
+          <h4>최솟값과 최댓값을 지정하는 minmax()</h4>
+          <blockquote>
+            <p>grid-template-rows: minmax(10rem, auto) minmax(15rem, auto);</p>
+            <div id="wrapper">
+              <div class="items">aaaaa bbbbbbbbbb ccccccccccccccc ddddddddddd dddddddddd</div>
+              <div class="items">aaaaa bbbbbbbbbb ccccccccccccccc ddddddddddd dddddddddd</div>
+              <div class="items">aaaaa bbbbbbbbbb ccccccccccccccc ddddddddddd dddddddddd</div>
+              <div class="items">aaaaa bbbbbbbbbb ccccccccccccccc ddddddddddd dddddddddd</div>
+              <div class="items">aaaaa bbbbbbbbbb ccccccccccccccc ddddddddddd dddddddddd</div>
+              <div class="items">aaaaa bbbbbbbbbb ccccccccccccccc ddddddddddd dddddddddd</div>
+            </div>
+          </blockquote>
+        </li>
       </ul>
     </section>
   </div>
