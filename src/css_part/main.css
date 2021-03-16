@@ -288,6 +288,27 @@ td {
   grid-template-rows: minmax(10rem, auto) minmax(15rem, auto);;
 }
 
-.section__grid .items {
+.section__grid #wrapper .items {
   border: 0.1rem solid #000;
 }
+
+#wrapper2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-rows: minmax(10rem, auto);
+}
+
+.section__grid #wrapper2 .items {
+  border: 0.1rem solid #000;
+}
+
+#wrapper3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-template-rows: minmax(10rem, auto);
+}
+
+.section__grid #wrapper3 .items {
+  border: 0.1rem solid #000;
+}
+
