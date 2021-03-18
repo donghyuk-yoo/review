@@ -56,9 +56,46 @@
                     </ul>
                 </li>
             </ul>
-            
+        </section>
+        
+        <section class="section section__event_handler">
             <h3><img src="../../img/bullet-image.png" alt="블릿"> 이벤트 처리기(이벤트 핸들러) : 이벤트가 발생하면 처리하는 함수</h3>
+            <ul>
+                <li>
+                    <h4>버튼 클릭시 알림창</h4>
+                    <blockquote>
+                        <ul class="alert">
+                            <li><a href="#" onclick="alert('Red 버튼 클릭')">Red</a></li>
+                            <li><a href="#" onclick="alert('Green 버튼 클릭')">Green</a></li>
+                            <li><a href="#" onclick="alert('Blue 버튼 클릭')">Blue</a></li>
+                        </ul>
+                    </blockquote>
+                </li>
+                <li>
+                    <h4>버튼 클릭시 색변경</h4>
+                    <blockquote>
+                        <ul class="alert">
+                            <li class='redBg' ><a href="#" onclick="changeBg('red')">Red</a></li>
+                            <li class='greenBg'><a href="#" onclick="changeBg('green')">Green</a></li>
+                            <li class='blueBg'><a href="#" onclick="changeBg('blue')">Blue</a></li>
+                        </green>
+                    </blockquote>
+                </li>
+            </ul>
         </section>
     </div>
+
+    <script>
+        const changeBg = (color) => {
+            const Bg = document.querySelector(`.${color}Bg`);
+            if (Bg.style.backgroundColor === color) {
+                console.log('white')
+                Bg.style.backgroundColor = '#fff';
+            }
+            else {
+                Bg.style.backgroundColor = color;
+            }
+        }
+    </script>
 </body>
 </html>

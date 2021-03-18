@@ -20,12 +20,13 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   border: 0.1rem solid #000;
 }
 
 th {
-  text-align: center; 
+  text-align: center;
   background: #6dadf775;
 }
 
@@ -42,9 +43,9 @@ td {
   padding-right: 10rem;
 }
 
-.nanum{
+.nanum {
   font-size: 2rem;
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: "Nanum Pen Script", cursive;
 }
 
 .section {
@@ -60,6 +61,15 @@ td {
   padding-bottom: 10px;
 }
 
+.section__event_handler .alert li {
+  display: inline-block;
+  width: 3rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  border: 0.1rem solid #000;
+}
 
-
-
+.section__event_handler .alert li a {
+  text-decoration: none;
+}
