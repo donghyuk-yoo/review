@@ -78,6 +78,7 @@
                             <li class='redBg' ><a href="#" onclick="changeBg('red')">Red</a></li>
                             <li class='greenBg'><a href="#" onclick="changeBg('green')">Green</a></li>
                             <li class='blueBg'><a href="#" onclick="changeBg('blue')">Blue</a></li>
+                        </ul>
                         </green>
                     </blockquote>
                 </li>
@@ -85,6 +86,7 @@
         </section>
     </div>
 
+    <!-- 웹 문서 안에 <script> 태그로 자바스크립트 작성 -->
     <script>
         const changeBg = (color) => {
             const Bg = document.querySelector(`.${color}Bg`);
