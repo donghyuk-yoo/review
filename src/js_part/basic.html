@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>basic</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <a href="../../public/index.html">HOME</a>
+  <div class="body__container">
+    <section class="section section__object">
+      <h1 class="summary">기본 입출력</h1>
+      <ul>
+        <li>
+          <h4>알림 창 alert(메시지)</h4>
+          <blockquote>
+            <button onClick="alert('알림창')">alert</button>
+          </blockquote>
+        </li>
+        <li>
+          <h4>확인 창 confirm(메시지)</h4>
+          <blockquote>
+            <button onClick=isComfirm()>alert</button>
+            <p>값 : </p>
+            <p class="confirm">-</p>
+          </blockquote>
+        </li>
+        <li>
+          <h4>프롬프트 창에서 입력받기 prompt(메시지) 또는 propmp(메시지, 기본값)</h4>
+          <blockquote>
+            <button onClick=isPrompt()>prompt</button>
+            <p>값 : </p>
+            <p class="prompt">-</p>
+          </blockquote>
+        </li>
+        <li>
+          <h4>화면 출력 document.write()</h4>
+          <blockquote>
+            <button onClick=isWrite()>write</button>
+          </blockquote>
+        </li>
+      </ul>
+    </section>
+
+    <script>
+      const cf = document.querySelector(".confirm");
+      const pp = document.querySelector(".prompt");
+      const wt = document.querySelector(".write");
+
+      const isComfirm = () => {
+        var reply = confirm("확인하시겠습니까?");
+        cf.innerText = reply;
+      }
+      
+      const isPrompt = () => {
+        var name = prompt("입력", "기본값");
+        pp.innerText = name;
+        document.write("prompt 값: " + name);
+      }
+
+      const isWrite = () => {
+        var name = prompt("입력", "기본값");
+        document.write("document.write(prompt값): " + name);
+      }
+
+    </script>
+  </div>
+</body>
+</html>
